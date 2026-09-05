@@ -16,10 +16,11 @@
 """
 
 import sys
-from datetime import date
+from datetime import datetime
+from zoneinfo import ZoneInfo
 
-# ── 台灣時間今天日期（系統時間即台灣時間） ─────────────────
-TW_TODAY = date.today()
+# ── 台灣時間今天日期（明確指定時區，不依賴系統時區） ─────────────────
+TW_TODAY = datetime.now(ZoneInfo("Asia/Taipei")).date()
 
 # ── 2026 台股休市日（TWSE 官方公告） ──────────────────────
 TW_HOLIDAYS_2026 = {
