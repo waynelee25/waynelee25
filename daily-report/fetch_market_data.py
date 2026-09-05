@@ -25,8 +25,8 @@ except ImportError:
 TW_TZ = ZoneInfo("Asia/Taipei")
 NOW = datetime.now(TW_TZ)
 TODAY_STR = NOW.strftime("%Y/%m/%d")
-OUTPUT_FILE = "/Users/wayne/Projects/daily_report/market_data.json"
-PORTFOLIO_FILE = "/Users/wayne/Projects/daily_report/portfolio.json"
+OUTPUT_FILE = "market_data.json"
+PORTFOLIO_FILE = "portfolio.json"
 
 # ── 讀取 portfolio.json 動態決定標的
 with open(PORTFOLIO_FILE, encoding="utf-8") as _f:

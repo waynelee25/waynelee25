@@ -5,7 +5,7 @@
 """
 import json, sys
 
-f = "/Users/wayne/Projects/daily_report/market_data.json"
+f = "market_data.json"
 d = json.load(open(f, encoding="utf-8"))
 
 def row(name, v):
